@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=inventory\ login
+comment0.target=void\ functions(Inventory,\ boolean)
+comment1.params=inventory
+comment1.target=void\ Add(Inventory)
+comment2.params=inventory
+comment2.target=void\ Remove(Inventory)
+comment3.params=inventory
+comment3.target=void\ Search(Inventory)
+comment4.params=item
+comment4.target=void\ itemFunc(Item)
+comment5.params=inventory
+comment5.target=void\ PriceRange(Inventory)
+comment6.params=inventory
+comment6.target=void\ CheckQuantities(Inventory)
+numComments=7

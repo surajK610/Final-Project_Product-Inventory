@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=tastes
+comment0.target=void\ setTastiness(java.util.ArrayList)
+comment1.params=
+comment1.target=int\ getTastiness()
+comment2.params=taste
+comment2.target=void\ addTaste(int)
+comment3.params=max\ min
+comment3.target=double\ adjustPrice(double,\ double)
+numComments=4

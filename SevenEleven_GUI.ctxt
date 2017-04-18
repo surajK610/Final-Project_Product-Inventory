@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.params=args
+comment0.target=void\ main(java.lang.String[])
+comment1.params=stage
+comment1.target=void\ start(javafx.stage.Stage)
+comment10.params=
+comment10.target=void\ logout()
+comment2.params=e
+comment2.target=void\ login(javafx.event.ActionEvent)
+comment3.params=
+comment3.target=java.lang.String\ getInventory()
+comment4.params=
+comment4.target=Inventory\ inventory()
+comment5.params=event
+comment5.target=void\ paneSet(javafx.event.ActionEvent)
+comment6.params=
+comment6.target=java.lang.String\ totalRevenue()
+comment7.params=
+comment7.target=java.lang.String\ totalCost()
+comment8.params=
+comment8.target=java.lang.String\ totalProfit()
+comment9.params=
+comment9.target=java.lang.String\ totalQuantities()
+numComments=11

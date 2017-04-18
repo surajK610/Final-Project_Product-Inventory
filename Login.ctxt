@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=user\ passwd
+comment0.target=boolean\ login(java.lang.String,\ java.lang.String)
+comment1.params=user\ passwd
+comment1.target=boolean\ userManager(java.lang.String,\ java.lang.String)
+comment2.params=
+comment2.target=void\ wrongLogin()
+comment3.params=
+comment3.target=void\ logout()
+numComments=4

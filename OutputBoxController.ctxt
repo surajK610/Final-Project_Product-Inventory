@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ initialize()
+comment1.params=event
+comment1.target=void\ paneSet(javafx.event.ActionEvent)
+numComments=2

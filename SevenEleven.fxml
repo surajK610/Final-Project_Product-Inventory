@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="821.0" prefWidth="1187.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SevenEleven_GUIController">
+   <children>
+      <Separator layoutX="178.0" layoutY="423.0" orientation="VERTICAL" prefHeight="383.0" prefWidth="5.0" />
+      <Separator layoutY="591.0" prefHeight="17.0" prefWidth="1096.0" />
+      <Button fx:id="totalRevenue" layoutX="27.0" layoutY="630.0" mnemonicParsing="false" onAction="#totalRevenue" text="Total Revenue" />
+      <Button fx:id="totalProfit" layoutX="30.0" layoutY="677.0" mnemonicParsing="false" onAction="#totalProfit" text="Total Profit     " />
+      <Button fx:id="totalCost" layoutX="30.0" layoutY="727.0" mnemonicParsing="false" onAction="#totalCost" text="Total Cost      " />
+      <Button fx:id="totalQuantity" layoutX="28.0" layoutY="770.0" mnemonicParsing="false" onAction="#totalQuantities" text="Total Quantity" />
+      <TextField fx:id="minPrice" layoutX="217.0" layoutY="664.0" promptText="Minimum Price:" />
+      <TextField fx:id="maxPrice" layoutX="217.0" layoutY="714.0" promptText="Maximum Price: " />
+      <Button fx:id="priceOK" layoutX="275.0" layoutY="754.0" mnemonicParsing="false" onAction="#priceRange" text="Enter" />
+      <Button fx:id="quantOK" layoutX="501.0" layoutY="757.0" mnemonicParsing="false" onAction="#quantRange" text="Enter" />
+      <TextField fx:id="minQuant" layoutX="430.0" layoutY="691.0" promptText="Minimum Quantity:" />
+      <Label fx:id="priceRangeLabel" layoutX="244.0" layoutY="631.0" text="Price Range">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label fx:id="quanRangeLabel" layoutX="440.0" layoutY="631.0" text="Quantity Range">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label layoutX="35.0" layoutY="22.0" text="Add Item">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="food" layoutX="44.0" layoutY="56.0" mnemonicParsing="false" text="Food" />
+      <CheckBox fx:id="supplies" layoutX="44.0" layoutY="74.0" mnemonicParsing="false" text="Supplies" />
+      <CheckBox fx:id="toys" layoutX="44.0" layoutY="92.0" mnemonicParsing="false" text="Toys" />
+      <TextField fx:id="name" layoutX="20.0" layoutY="127.0" prefHeight="23.0" prefWidth="124.0" promptText="Name:" />
+      <TextField fx:id="price" layoutX="20.0" layoutY="165.0" prefHeight="27.0" prefWidth="124.0" promptText="Price (Obtained)" />
+      <TextField fx:id="loc" layoutX="17.0" layoutY="207.0" prefHeight="23.0" prefWidth="50.0" promptText="Loc" />
+      <TextField fx:id="quan" layoutX="87.0" layoutY="207.0" prefHeight="27.0" prefWidth="67.0" promptText="Quantity" />
+      <Button fx:id="add" layoutX="70.0" layoutY="280.0" mnemonicParsing="false" onAction="#add" text="Add" />
+      <Button fx:id="logout" layoutX="868.0" layoutY="722.0" mnemonicParsing="false" onAction="#logout" prefHeight="49.0" prefWidth="145.0" text="Log out">
+         <font>
+            <Font name="PT Sans Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="inventory" layoutX="868.0" layoutY="673.0" mnemonicParsing="false" onAction="#paneSet" prefHeight="49.0" prefWidth="145.0" text="Inventory">
+         <font>
+            <Font name="PT Sans Bold" size="18.0" />
+         </font>
+      </Button>
+      <TableView fx:id="table" editable="true" fixedCellSize="30.0" layoutX="180.0" layoutY="14.0" prefHeight="585.0" prefWidth="980.0" tableMenuButtonVisible="true">
+        <columns>
+          <TableColumn fx:id="nameCol" prefWidth="288.3566589355469" text="Name" />
+          <TableColumn fx:id="typeCol" prefWidth="123.62362670898438" text="Type" />
+            <TableColumn fx:id="priceCol" prefWidth="111.854248046875" text="Price(ob)" />
+            <TableColumn fx:id="markupCol" prefWidth="60.4537353515625" text="Markup" />
+            <TableColumn fx:id="priceSCol" prefWidth="97.61151123046875" text="Price(sell)" />
+            <TableColumn fx:id="idCol" prefWidth="75.6114501953125" text="ID" />
+            <TableColumn fx:id="locCol" prefWidth="62.45355224609375" text="Loc" />
+            <TableColumn fx:id="quantCol" prefWidth="120.54638671875" text="Quantity" />
+        </columns>
+      </TableView>
+      <Button fx:id="remove" layoutX="53.0" layoutY="410.0" mnemonicParsing="false" onAction="#remove" prefHeight="27.0" prefWidth="77.0" text="Remove" />
+      <Separator layoutX="-1.0" layoutY="325.0" prefHeight="5.0" prefWidth="185.0" />
+      <Button fx:id="edit" layoutX="53.0" layoutY="384.0" mnemonicParsing="false" onAction="#edit" prefHeight="18.0" prefWidth="77.0" text="Edit" />
+      <CheckBox fx:id="damaged" layoutX="44.0" layoutY="247.0" mnemonicParsing="false" text="Damaged" />
+   </children>
+   <effect>
+      <Lighting diffuseConstant="2.0" specularConstant="0.0" specularExponent="14.29" surfaceScale="0.0">
+         <bumpInput>
+            <Lighting bumpInput="$null">
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </bumpInput>
+         <light>
+            <Light.Distant />
+         </light>
+      </Lighting>
+   </effect>
+</Pane>
